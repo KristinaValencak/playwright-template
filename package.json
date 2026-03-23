@@ -1,0 +1,20 @@
+{
+  "name": "codester-starter-kit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "cucumber-js --config cucumber.cjs",
+    "test:headed": "cross-env HEADLESS=false cucumber-js --config cucumber.cjs",
+    "test:demo": "cross-env DEMO_MODE=true VIDEO=true HEADLESS=false SLOWMO_MS=200 cucumber-js --config cucumber.cjs",
+    "test:debug": "cross-env HEADLESS=false SLOWMO_MS=250 cucumber-js --config cucumber.cjs"
+  },
+  "devDependencies": {
+    "cross-env": "latest"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "latest",
+    "dotenv": "latest",
+    "playwright": "latest"
+  }
+}
